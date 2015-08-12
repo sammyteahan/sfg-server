@@ -1,0 +1,5 @@
+*.pyo
+*.pyc
+bin
+eggs
+src/*.egg-info
