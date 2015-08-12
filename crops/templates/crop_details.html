@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Crop Detail</h1>
+	<hr>
+	<p>{{ crop }}</p>
+	<p>{{ crop.plant_start_date }}</p>
+	<p>{{ crop.plant_end_date }}</p>
+	<p>Transplant: {{ crop.transplant }}</p>
+	<p>Direct Seed: {{ crop.direct_seed }}</p>
+{% endblock %}
