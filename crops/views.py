@@ -19,13 +19,11 @@ Rest views
 '''
 
 class CropList(generics.ListAPIView):
-
     queryset = Crop.objects.all()
     serializer_class = CropSerializer
 
 
 class SeasonCrops(generics.ListAPIView):
-
     serializer_class = CropSerializer
 
     def get_queryset(self):
@@ -38,7 +36,6 @@ class SeasonCrops(generics.ListAPIView):
 
 
 class CropRetrieve(generics.RetrieveAPIView):
-
     serializer_class = CropSerializer
     queryset = Crop.objects.all();
 
@@ -48,11 +45,9 @@ Django views
 '''
 
 class CropDetail(DetailView):
-
     model = Crop
     template_name = 'crop_details.html'
 
 
 class BaseView(TemplateView):
-
     template_name = 'base.html'
