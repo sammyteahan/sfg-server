@@ -83,9 +83,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'sfg_sammyteahan',
-        'USER': 'meodog',
+        'USER': 'sammy',
         'PASSWORD': 'meo123',
-        'HOST': '',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }
@@ -109,6 +109,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = '/opt/sfg/static/'
 
 '''
 REST FRAMEWORK SETTINGS
@@ -116,7 +117,6 @@ REST FRAMEWORK SETTINGS
 REST_FRAMEWORK = {
     # 'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
 }
-
 
 # Just keep this as a reference for now
 WINTER_PLANTING_START = 'November 14'
