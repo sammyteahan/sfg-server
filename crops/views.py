@@ -17,7 +17,6 @@ from .models import Category, Crop
 '''
 Rest views
 '''
-
 class CropList(generics.ListAPIView):
     queryset = Crop.objects.all()
     serializer_class = CropSerializer
@@ -43,7 +42,6 @@ class CropRetrieve(generics.RetrieveAPIView):
 '''
 Django views
 '''
-
 class CropDetail(DetailView):
     model = Crop
     template_name = 'crop_details.html'
