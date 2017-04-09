@@ -40,6 +40,7 @@ class Crop(models.Model):
     direct_seed = models.BooleanField(default=None)
     category = models.ForeignKey(Category, related_name="crops")
     notes = models.TextField(blank=True, null=True)
+    image = models.ImageField(upload_to='images', blank=True, null=True)
 
     def __str__(self):
         return self.name

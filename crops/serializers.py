@@ -5,12 +5,10 @@ from .models import Crop, Category
 
 class CropSerializer(serializers.ModelSerializer):
 
-    # category = CategorySerializer(many=False, read_only=True)
-
     class Meta:
         model = Crop
         fields = ('name', 'pk', 'plant_start_date', 'plant_end_date',
-            'tier', 'transplant', 'direct_seed', 'category', 'notes')
+            'tier', 'transplant', 'direct_seed', 'category', 'notes', 'image')
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -20,4 +18,3 @@ class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = ('name', 'crops')
-

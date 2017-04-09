@@ -111,9 +111,13 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = '/opt/sfg/static/'
 
-'''
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = '/opt/sfg/media/'
+
+"""
 REST FRAMEWORK SETTINGS
-'''
+"""
 REST_FRAMEWORK = {
     # 'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
 }
